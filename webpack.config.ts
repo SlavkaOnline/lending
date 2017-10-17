@@ -10,7 +10,6 @@ const extractSass = new ExtractTextPlugin({
 let configure: webpack.Configuration;
 
 configure = {
-    devtool: 'inline-source-map',
     entry: './main.ts',
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -36,21 +35,36 @@ configure = {
                             loader: 'css-loader'
                         },
                         {
+                            loader: 'resolve-url-loader'
+                        },
+                        {
                             loader: 'sass-loader'
                         }
                     ],
                     fallback: 'style-loader'
                 })
+            },
+            {
+                test: /\.(png|jpg|gif)$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[path][name].[ext]',
+                            outputPath: path.resolve(__dirname, 'dist')
+                          }   
+                    }
+                ]
             }
         ]
     },
     plugins: [
+        extractSass,
         new HtmlWebpackPlugin({
             template: './index.html'
         }),
-        extractSass
     ],
-    watch: true,
+    watch: false,
     devServer: {
         contentBase: path.join(__dirname, "dist"),
         compress: true,
