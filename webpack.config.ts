@@ -52,6 +52,14 @@ configure = {
                         loader: 'file-loader?name=/img/[name].[ext]'                      
                     }
                 ]
+            },
+            {
+                test: /\.(otf)$/,
+                use: [
+                    {
+                        loader: 'file-loader?name=/fonts/[name].[ext]'                      
+                    }
+                ]
             }
         ]
     },
