@@ -144,7 +144,7 @@ table {
   max-width: 1440px;
   height: 724px;
   margin: 0 auto;
-  background: url(D:\Projects\StormSystem\archive\attempt2\distimg/header_bg.png) no-repeat;
+  background: url(../img/header_bg.png) no-repeat;
   background-position: center;
   background-size: cover;
   margin-bottom: -75px;

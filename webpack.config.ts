@@ -41,18 +41,15 @@ configure = {
                             loader: 'sass-loader'
                         }
                     ],
-                    fallback: 'style-loader'
+                    fallback: 'style-loader',
+                    publicPath: ".."
                 })
             },
             {
                 test: /\.(png|jpg|gif)$/,
                 use: [
                     {
-                        loader: 'file-loader',
-                        options: {
-                            name: '[path][name].[ext]',
-                            outputPath: path.resolve(__dirname, 'dist')
-                          }   
+                        loader: 'file-loader?name=/img/[name].[ext]'                      
                     }
                 ]
             }

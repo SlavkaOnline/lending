@@ -84,7 +84,7 @@ __webpack_require__(2);
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "D:\\Projects\\StormSystem\\archive\\attempt2\\distimg/header_bg.png";
+module.exports = __webpack_require__.p + "/img/header_bg.png";
 
 /***/ })
 /******/ ]);
