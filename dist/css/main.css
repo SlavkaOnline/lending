@@ -144,7 +144,7 @@ table {
   max-width: 1440px;
   height: 724px;
   margin: 0 auto;
-  padding: 30px 135px;
+  padding: 0px 135px;
   background: url(../img/header_bg.png) no-repeat;
   background-position: center;
   background-size: cover;
@@ -165,7 +165,7 @@ table {
 }
 
 .menu__logo {
-  height: 50px;
+  height: 60px;
   width: 200px;
 }
 
@@ -248,7 +248,7 @@ table {
 .form-divelery-point__input {
   width: 385px;
   height: 40px;
-  padding: 5px;
+  padding: 15px;
   background: #fffcff;
   border: none;
   border-radius: 5px;
@@ -256,6 +256,10 @@ table {
   font-family: "Tahoma";
   color: rgba(159, 164, 164, 0.878);
   line-height: 1;
+}
+
+.form-divelery-point__input:focus {
+  border: none;
 }
 
 .form-divelery-point__button {
@@ -271,14 +275,18 @@ table {
   color: white;
 }
 
+.form-divelery-point__button:focus {
+  border: none;
+}
+
 .location-icon-container {
   position: relative;
 }
 
 .location-icon {
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 7px;
+  right: 15px;
 }
 
 .section1 {

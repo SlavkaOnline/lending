@@ -21,7 +21,7 @@
         flex-flow: row nowrap;
     }
     &__logo {
-        height: 50px;
+        height: 60px;
         width: 200px;
     }
     &__city {
@@ -104,6 +104,9 @@
         font-family: "Tahoma";
         color: rgba(159, 164, 164, 0.878);
         line-height: 1;
+        &:focus {
+            border: none;
+        }
     }
     &__button {
         margin-top: 30px;
@@ -116,6 +119,9 @@
         font-size: 19.35px;
         font-family: "Tahoma";
         color: rgb(255, 255, 255);
+        &:focus {
+            border: none;
+        }
     }
 }
 
@@ -125,6 +131,6 @@
 
 .location-icon {
     position: absolute;
-    top: 10px;
+    top: 7px;
     right: 15px;
 }
